@@ -911,28 +911,4 @@ footer {
         display: none;
     }
 }
-.hero::before {
-    content: "";
-    position: absolute;
-    width: 520px;
-    height: 520px;
-    background: #102a43;
-    border-radius: 50%;
-    top: -220px;
-    right: -220px;
-    opacity: 0.95;
-    z-index: 0;
-}
 
-.hero::after {
-    content: "";
-    position: absolute;
-    width: 430px;
-    height: 430px;
-    background: #102a43;
-    border-radius: 50%;
-    bottom: -210px;
-    left: -210px;
-    opacity: 0.95;
-    z-index: 0;
-}
