@@ -4,37 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>SpireX LMS Authentication</title>
+    <title>SpireX Foundation | Learning Management System</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header class="header">
 
-    <a href="#" class="logo">
-        <img src="logo.png" alt="SpireX Foundation">
+    <a href="#home" class="brand">
+        <img src="logo.png" alt="SpireX Foundation Logo">
     </a>
 
-    <div class="header-content">
+    <div class="header-right">
 
         <div class="system-title">
             <i class="fa-solid fa-graduation-cap"></i>
-            <span>Learning Management System</span>
+            Learning Management System
         </div>
 
         <nav>
-            <a href="#">Learn</a>
-            <a href="#">Build</a>
-            <a href="#">Rise</a>
+            <a href="#home">Learn</a>
+            <a href="#features">Build</a>
+            <a href="#stats">Rise</a>
         </nav>
 
     </div>
@@ -42,88 +41,127 @@
 </header>
 
 
-<main class="hero">
+<main class="hero" id="home">
 
-    <div class="hero-background"></div>
+    <div class="background-grid"></div>
 
-    <div class="hero-content">
+    <div class="image-shade"></div>
 
-        <section class="welcome">
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
 
-            <div class="platform">
-                <span></span>
-                SPIREX LEARNING PLATFORM
-            </div>
-
-            <h1>
-                Learn.
-                <strong>Build.</strong>
-                Rise.
-            </h1>
-
-            <p>
-                Welcome to the SpireX Foundation Learning Management System.
-                Access courses, develop your skills, complete projects and
-                track your learning journey from one powerful platform.
-            </p>
+    <div class="curve curve-one"></div>
+    <div class="curve curve-two"></div>
 
 
-            <div class="features">
+    <section class="hero-content">
 
-                <div class="feature">
+        <div class="platform-badge">
+            <span></span>
+            SPIREX LEARNING PLATFORM
+        </div>
 
-                    <div class="feature-icon">
-                        <i class="fa-solid fa-briefcase"></i>
-                    </div>
 
-                    <div>
-                        <h3>Internship Programs</h3>
-                        <span>Real-world experience</span>
-                    </div>
+        <h1>
+            Learn.
+            <strong>Build.</strong>
+            Rise.
+        </h1>
 
+
+        <p class="hero-text">
+            Welcome to the SpireX Foundation Learning Management System.
+            Access courses, complete assignments, develop new skills and
+            track your learning journey from one powerful platform.
+        </p>
+
+
+        <div class="feature-grid" id="features">
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
                 </div>
 
-
-                <div class="feature">
-
-                    <div class="feature-icon gold">
-                        <i class="fa-solid fa-book-open"></i>
-                    </div>
-
-                    <div>
-                        <h3>Training Programs</h3>
-                        <span>Professional skills</span>
-                    </div>
-
-                </div>
-
-
-                <div class="feature">
-
-                    <div class="feature-icon">
-                        <i class="fa-solid fa-code"></i>
-                    </div>
-
-                    <div>
-                        <h3>Practical Projects</h3>
-                        <span>Build your portfolio</span>
-                    </div>
-
+                <div>
+                    <h3>Secure Access</h3>
+                    <p>Protected authentication</p>
                 </div>
 
             </div>
 
 
-            <div class="statistics">
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+
+                <div>
+                    <h3>Smart Learning</h3>
+                    <p>Courses and resources</p>
+                </div>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+
+                <div>
+                    <h3>Track Progress</h3>
+                    <p>Monitor your journey</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="stats" id="stats">
+
+            <div class="stat-item">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
 
                 <div>
                     <strong>50+</strong>
                     <span>Courses</span>
                 </div>
 
+            </div>
+
+
+            <div class="stat-divider"></div>
+
+
+            <div class="stat-item">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+
                 <div>
                     <strong>1K+</strong>
                     <span>Learners</span>
+                </div>
+
+            </div>
+
+
+            <div class="stat-divider"></div>
+
+
+            <div class="stat-item">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-user-tie"></i>
                 </div>
 
                 <div>
@@ -133,114 +171,133 @@
 
             </div>
 
-        </section>
+        </div>
+
+    </section>
 
 
-        <section class="authentication">
+    <section class="login-section">
 
-            <div class="auth-card">
-
-                <div class="card-logo">
-                    <img src="logo.png" alt="SpireX Foundation">
-                </div>
+        <div class="login-card">
 
 
-                <div class="lock">
-                    <i class="fa-solid fa-lock"></i>
-                </div>
+            <div class="card-logo">
+
+                <img src="logo.png" alt="SpireX Foundation Logo">
+
+            </div>
 
 
-                <h2 id="formTitle">
-                    Welcome Back
-                </h2>
-
-                <p class="form-subtitle" id="formSubtitle">
-                    Login to continue your learning journey
-                </p>
+            <div class="security-circle">
+                <i class="fa-solid fa-lock"></i>
+            </div>
 
 
-                <div class="tabs">
-
-                    <button
-                        type="button"
-                        class="tab active"
-                        id="loginTab"
-                    >
-                        <i class="fa-regular fa-user"></i>
-                        Login
-                    </button>
-
-                    <button
-                        type="button"
-                        class="tab"
-                        id="registerTab"
-                    >
-                        <i class="fa-solid fa-user-plus"></i>
-                        Register
-                    </button>
-
-                </div>
+            <h2 id="formTitle">
+                Welcome Back
+            </h2>
 
 
-                <form id="authForm">
+            <p class="form-subtitle" id="formSubtitle">
+                Login to continue your learning journey
+            </p>
 
-                    <div class="input-group">
 
-                        <label>Email Address</label>
+            <div class="auth-tabs">
 
-                        <div class="input-box">
+                <button
+                    type="button"
+                    class="auth-tab active"
+                    id="loginTab">
 
-                            <i class="fa-regular fa-envelope"></i>
+                    <i class="fa-regular fa-user"></i>
 
-                            <input
-                                type="email"
-                                id="email"
-                                placeholder="Enter your email"
-                                required
-                            >
+                    Login
 
-                        </div>
+                </button>
+
+
+                <button
+                    type="button"
+                    class="auth-tab"
+                    id="registerTab">
+
+                    <i class="fa-solid fa-user-plus"></i>
+
+                    Register
+
+                </button>
+
+            </div>
+
+
+            <form id="authForm">
+
+
+                <div class="input-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required
+                        >
 
                     </div>
 
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter your password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            id="togglePassword">
+
+                            <i class="fa-regular fa-eye"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="confirm-wrapper" id="confirmWrapper">
 
                     <div class="input-group">
 
-                        <label>Password</label>
+                        <label for="confirmPassword">
+                            Confirm Password
+                        </label>
 
                         <div class="input-box">
 
                             <i class="fa-solid fa-lock"></i>
-
-                            <input
-                                type="password"
-                                id="password"
-                                placeholder="Enter your password"
-                                required
-                            >
-
-                            <button
-                                type="button"
-                                id="togglePassword"
-                            >
-                                <i class="fa-regular fa-eye"></i>
-                            </button>
-
-                        </div>
-
-                    </div>
-
-
-                    <div
-                        class="input-group"
-                        id="confirmBox"
-                    >
-
-                        <label>Confirm Password</label>
-
-                        <div class="input-box">
-
-                            <i class="fa-solid fa-shield-halved"></i>
 
                             <input
                                 type="password"
@@ -252,78 +309,101 @@
 
                     </div>
 
+                </div>
 
-                    <div
-                        class="options"
-                        id="loginOptions"
-                    >
 
-                        <label>
-                            <input type="checkbox">
-                            Remember me
-                        </label>
+                <div class="login-options" id="loginOptions">
 
-                        <button
-                            type="button"
-                            id="forgotPassword"
+                    <label class="remember">
+
+                        <input
+                            type="checkbox"
+                            id="remember"
                         >
-                            Forgot Password?
-                        </button>
 
-                    </div>
+                        <span class="checkmark"></span>
 
+                        Remember me
 
-                    <button
-                        type="submit"
-                        class="submit-btn"
-                        id="submitButton"
-                    >
-
-                        <span id="buttonText">
-                            Login
-                        </span>
-
-                        <span class="arrow">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </span>
-
-                    </button>
+                    </label>
 
 
-                    <div id="message"></div>
-
-                </form>
-
-
-                <div class="switch-account">
-
-                    <span id="switchText">
-                        Don't have an account?
-                    </span>
-
-                    <button
-                        type="button"
-                        id="switchButton"
-                    >
-                        Register
-                    </button>
+                    <a href="#" id="forgotPassword">
+                        Forgot Password?
+                    </a>
 
                 </div>
 
+
+                <button
+                    type="submit"
+                    class="submit-button"
+                    id="submitButton">
+
+                    <span id="submitText">
+                        Login
+                    </span>
+
+                    <span class="submit-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+
+                </button>
+
+
+                <div
+                    class="form-message"
+                    id="formMessage">
+                </div>
+
+            </form>
+
+
+            <div class="register-bottom">
+
+                <span id="bottomText">
+                    Don't have an account?
+                </span>
+
+                <button id="bottomAction">
+                    Register
+                </button>
+
             </div>
 
-        </section>
 
-    </div>
+            <div class="card-decoration">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+        </div>
+
+    </section>
 
 </main>
 
 
 <footer>
 
-    <span>© 2026 SpireX Foundation</span>
+    <span>
+        © 2026 SpireX Foundation
+    </span>
 
-    <span>Learn • Build • Rise</span>
+    <span>
+        Learn • Build • Rise
+    </span>
 
 </footer>
 
