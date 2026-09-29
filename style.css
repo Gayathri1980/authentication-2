@@ -911,4 +911,11 @@ footer {
         display: none;
     }
 }
-
+.hero::before,
+.hero::after,
+.image-shade,
+.curve,
+.curve-one,
+.curve-two {
+    display: none !important;
+}
