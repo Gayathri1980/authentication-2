@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SpireX LMS Authentication</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <a href="#" class="logo">
+        <img src="logo.png" alt="SpireX Foundation">
+    </a>
+
+    <div class="header-content">
+
+        <div class="system-title">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Learning Management System</span>
+        </div>
+
+        <nav>
+            <a href="#">Learn</a>
+            <a href="#">Build</a>
+            <a href="#">Rise</a>
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="hero">
+
+    <div class="hero-background"></div>
+
+    <div class="hero-content">
+
+        <section class="welcome">
+
+            <div class="platform">
+                <span></span>
+                SPIREX LEARNING PLATFORM
+            </div>
+
+            <h1>
+                Learn.
+                <strong>Build.</strong>
+                Rise.
+            </h1>
+
+            <p>
+                Welcome to the SpireX Foundation Learning Management System.
+                Access courses, develop your skills, complete projects and
+                track your learning journey from one powerful platform.
+            </p>
+
+
+            <div class="features">
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+
+                    <div>
+                        <h3>Internship Programs</h3>
+                        <span>Real-world experience</span>
+                    </div>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <div class="feature-icon gold">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+
+                    <div>
+                        <h3>Training Programs</h3>
+                        <span>Professional skills</span>
+                    </div>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+
+                    <div>
+                        <h3>Practical Projects</h3>
+                        <span>Build your portfolio</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="statistics">
+
+                <div>
+                    <strong>50+</strong>
+                    <span>Courses</span>
+                </div>
+
+                <div>
+                    <strong>1K+</strong>
+                    <span>Learners</span>
+                </div>
+
+                <div>
+                    <strong>25+</strong>
+                    <span>Instructors</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="authentication">
+
+            <div class="auth-card">
+
+                <div class="card-logo">
+                    <img src="logo.png" alt="SpireX Foundation">
+                </div>
+
+
+                <div class="lock">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+
+
+                <h2 id="formTitle">
+                    Welcome Back
+                </h2>
+
+                <p class="form-subtitle" id="formSubtitle">
+                    Login to continue your learning journey
+                </p>
+
+
+                <div class="tabs">
+
+                    <button
+                        type="button"
+                        class="tab active"
+                        id="loginTab"
+                    >
+                        <i class="fa-regular fa-user"></i>
+                        Login
+                    </button>
+
+                    <button
+                        type="button"
+                        class="tab"
+                        id="registerTab"
+                    >
+                        <i class="fa-solid fa-user-plus"></i>
+                        Register
+                    </button>
+
+                </div>
+
+
+                <form id="authForm">
+
+                    <div class="input-group">
+
+                        <label>Email Address</label>
+
+                        <div class="input-box">
+
+                            <i class="fa-regular fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Enter your email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Password</label>
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Enter your password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                id="togglePassword"
+                            >
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="input-group"
+                        id="confirmBox"
+                    >
+
+                        <label>Confirm Password</label>
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-shield-halved"></i>
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                placeholder="Confirm your password"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="options"
+                        id="loginOptions"
+                    >
+
+                        <label>
+                            <input type="checkbox">
+                            Remember me
+                        </label>
+
+                        <button
+                            type="button"
+                            id="forgotPassword"
+                        >
+                            Forgot Password?
+                        </button>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="submit-btn"
+                        id="submitButton"
+                    >
+
+                        <span id="buttonText">
+                            Login
+                        </span>
+
+                        <span class="arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+
+                    </button>
+
+
+                    <div id="message"></div>
+
+                </form>
+
+
+                <div class="switch-account">
+
+                    <span id="switchText">
+                        Don't have an account?
+                    </span>
+
+                    <button
+                        type="button"
+                        id="switchButton"
+                    >
+                        Register
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <span>© 2026 SpireX Foundation</span>
+
+    <span>Learn • Build • Rise</span>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
